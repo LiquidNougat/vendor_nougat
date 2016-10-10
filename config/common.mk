@@ -84,3 +84,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/nougat/overlay/common
 
 # Inherit build prop overrides
 -include vendor/nougat/config/common_version.mk
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/nougat/tools/squisher

@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
 # Prebuilt packages
 PRODUCT_PACKAGES += \
     NexusLauncher \
-    Substratum
+    Substratum \
+    Turbo
 
 # Exclude SystemUI tests
 EXCLUDE_SYSTEMUI_TESTS := true

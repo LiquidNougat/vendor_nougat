@@ -8,7 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.setupwizard.rotation_locked=true
 
-# UBER property overides
+# Other property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.bg_apps_limit=20 \
     wifi.supplicant_scan_interval=180 \
@@ -54,13 +54,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/nougat/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
-# Include packages
+# Included packages
 PRODUCT_PACKAGES += \
-    AOSPLinks \
     Busybox \
-    Gallery2 \
-    Launcher3 \
-    QuickSearchBox \
     ThemeInterfacer
 
 # Facelock issues
@@ -69,6 +65,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \
+    NexusLauncher \
     Substratum
 
 # Exclude SystemUI tests

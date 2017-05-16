@@ -31,12 +31,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true \
     ro.adb.secure=1
 
-# Include Substratum unless SUBSTRATUM is set to false
-ifneq ($(SUBSTRATUM),false)
-    PRODUCT_PACKAGES += \
-        Substratum
-endif
-
 # APN config
 PRODUCT_COPY_FILES += \
     vendor/nougat/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
@@ -77,6 +71,10 @@ PRODUCT_PACKAGES += \
 # Facelock issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
+
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    Substratum
 
 # Exclude SystemUI tests
 EXCLUDE_SYSTEMUI_TESTS := true

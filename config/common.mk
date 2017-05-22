@@ -35,11 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/nougat/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Backup script
-PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/nougat/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions
-
 # Boot animation
 PRODUCT_COPY_FILES += \
     vendor/nougat/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
